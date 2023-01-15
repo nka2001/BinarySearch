@@ -1,8 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.binarysearch;
 
 /**
@@ -12,6 +7,21 @@ package com.mycompany.binarysearch;
 public class BinarySearch {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+     
+        BinarySearchALG<String> b = new BinarySearchALG<>();
+        b.addData("Nick");
+        b.addData("Mike");
+        b.addData("Kris");
+        b.addData("Anna");
+        b.addData("Rylee");
+        b.addData("Adam");
+        
+        b.sort();
+        
+        b.setSearchValue("Nick");
+        System.out.println(b.RecursiveBinarySearch(0, 5));
+        
+        
+        
     }
 }
